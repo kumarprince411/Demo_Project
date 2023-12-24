@@ -3,8 +3,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home-style.css" />
+    <link rel="stylesheet" href="service-style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <div class="head-container homepage">
       <div class="layer1 layer">
@@ -13,22 +14,21 @@
 
       <div class="layer2 layer">
         <img src="./images/innocad.jpg" alt="COMPANY-LOGO" class="brand-logo" />
+        <img src="images/hamburger.png" alt="" class="menu-mob-icon"/>
 
+        <div class="black"></div>
         <div class="rt">
+          <a href="" class="close"><span class="x-close">X</span></a>
           <a href="">HOME</a>
           <a href="./services.html">SERVICES</a>
           <a href="./services.html">PRODUCTS</a>
           <a href="">ABOUT US</a>
           <a href="">WHAT'S NEW</a>
-          <img src="./images/search.jpeg" alt="search" />
         </div>
-      </div>
-
-      <div class="layer3 layer">
-        <h2 class="bd-title"></h2>
       </div>
     </div>
   </head>
+
   <body class="homepage">
     <div class="main-container">
       <div class="video-wrapper">
@@ -48,10 +48,10 @@
         ></video>
         <div class="video-opq">
           <div class="video-content">
-            <h2 class="title">
+            <h1 class="title">
               WORLD-CLASS PV MOUNTING AND SOLAR SOLUTIONS ARE MADE HERE.
-            </h2>
-            <h3>POWERED BY A TEAM WITH INNOVATION AT ITS HEART.</h3>
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ab numquam, explicabo odio repellendus asperiores.</p>
 
             <div class="btn-box">
               <a class="elementor-button" href="">
@@ -62,37 +62,45 @@
               </a>
             </div>
           </div>
-          <div class="cards-wrapper">
-            <div class="video-cards">
-              <h4>NEW PRODUCTS</h4>
-              <p class="desc">
-                AI introduces an exciting collection of innovations that will
-                change the way you install system.
-              </p>
-              <div class="btn-box">
-                <a class="elementor-button" href="">
-                  <span class="elementor-button-text">Find More</span>
-                </a>
-                <a class="elementor-button btn2" href="">
-                  <span class="elementor-button-text">Read More</span>
-                </a>
-              </div>
-            </div>
-            <div class="video-cards">
-              <h4>NEW PRODUCTS</h4>
-              <p class="desc">
-                AI introduces an exciting collection of innovations that will
-                change the way you install system.
-              </p>
-              <div class="btn-box">
-                <a class="elementor-button" href="">
-                  <span class="elementor-button-text">Find More</span>
-                </a>
-                <a class="elementor-button btn2" href="">
-                  <span class="elementor-button-text">Read More</span>
-                </a>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="cards-wrapper">
+        <div class="image-content">
+          <div class="image-cards">
+            <img src="./images/imagecards1.jpg" alt="" srcset="" />
+          </div>
+          <div class="content content1">
+            <h1>
+              Whatever the mind of man can conceive and believe, it can achieve.
+            </h1>
+            <p class="desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+              corrupti alias laudantium hic nihil assumenda debitis, dolorum cum
+              dolorem cumque unde rerum accusamus quos mollitia vero nobis
+              quaerat saepe. Voluptas.
+            </p>
+            <a class="elementor-button" href="">
+              <span class="elementor-button-text">Learn More</span>
+            </a>
+          </div>
+        </div>
+        <div class="image-content">
+          <div class="content content2">
+            <h1>
+              Whatever the mind of man can conceive and believe, it can achieve.
+            </h1>
+            <p class="desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+              corrupti alias laudantium hic nihil assumenda debitis, dolorum cum
+              dolorem cumque unde rerum accusamus quos mollitia vero nobis
+              quaerat saepe. Voluptas.
+            </p>
+            <a class="elementor-button" href="">
+              <span class="elementor-button-text">Learn More</span>
+            </a>
+          </div>
+          <div class="image-cards">
+            <img src="./images/imagecards2.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -136,5 +144,6 @@
         </ul>
       </div>
     </div>
+    <script src="home-style.js"></script>
   </footer>
 </html>

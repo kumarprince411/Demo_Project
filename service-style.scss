@@ -3,23 +3,25 @@
   padding: 0;
 }
 
+//Common button
 a.elementor-button {
   background-color: #f2682a;
   font-weight: 600;
   padding: 10px;
   color: #fff;
   text-decoration: none;
-  
+
   &:hover {
     transform: scale(1.1);
   }
 }
 
+//Common header
 .head-container {
   .layer {
     height: 60px;
-    //width: 100%;
   }
+
   .layer1 {
     background-color: #4868d6;
     display: flex;
@@ -54,8 +56,10 @@ a.elementor-button {
       margin-left: 20px;
     }
     div.rt {
-      display: flex;
-      align-items: center;
+      @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+      }
 
       a {
         padding: 20px;
@@ -76,9 +80,6 @@ a.elementor-button {
         width: 30px;
         padding: 0 10px;
       }
-      @media (max-width: 767px) {
-        display: none;
-      }
     }
   }
 
@@ -91,7 +92,60 @@ a.elementor-button {
       color: #fff;
     }
   }
+
+  //Common hamburger menu mobile
+  .menu-mob-icon {
+    width: 50px;
+    margin-right: 20px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .black {
+    @media (max-width: 767px) {
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      display: none;
+    }
+  }
+
+  .rt {
+    @media (max-width: 767px) {
+      background-color: #fff;
+      width: 50%;
+      height: 100%;
+      overflow: auto;
+      position: fixed;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      display: none;
+    }
+    a {
+      @media (max-width: 767px) {
+        display: block;
+
+        &.close {
+          text-align: right;
+        }
+      }
+      span.x-close {
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
 }
+
+//service page cards
 .card-container {
   display: flex;
   flex-direction: row;
@@ -119,7 +173,7 @@ a.elementor-button {
     }
 
     @media (min-width: 992px) {
-      width: 20%;
+      width: 13%;
     }
 
     img {
@@ -138,7 +192,7 @@ a.elementor-button {
       margin-bottom: 20px;
       height: 100px;
       overflow-y: auto;
-      
+
       &::-webkit-scrollbar {
         display: none;
       }
@@ -146,6 +200,7 @@ a.elementor-button {
   }
 }
 
+//service page request bar
 .request-bar {
   min-height: 120px;
   width: 100%;
@@ -175,6 +230,7 @@ a.elementor-button {
   }
 }
 
+//service page form
 .form-wrapper {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -213,6 +269,10 @@ a.elementor-button {
 
     label {
       padding: 5px;
+
+      .mandatory {
+        color: red;
+      }
     }
 
     button[type="submit"] {
@@ -230,6 +290,7 @@ a.elementor-button {
   }
 }
 
+//Common footer
 .footer {
   background: #4868d6;
   padding: 50px 0;

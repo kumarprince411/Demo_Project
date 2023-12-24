@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>title</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Services</title>
+    <link rel="stylesheet" href="service-style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <div class="head-container">
       <div class="layer1 layer">
@@ -13,13 +14,15 @@
 
       <div class="layer2 layer">
         <img src="./images/innocad.jpg" alt="COMPANY-LOGO" class="brand-logo" />
+        <img src="images/hamburger.png" alt="" class="menu-mob-icon" />
 
+        <div class="black"></div>
         <div class="rt">
+          <a href="" class="close"><span class="x-close">X</span></a>
           <a href="./home.html">HOME</a>
           <a href="">SERVICES</a>
           <a href="">ABOUT US</a>
           <a href="">WHAT'S NEW</a>
-          <img src="./images/search.jpeg" alt="search" />
         </div>
       </div>
 
@@ -32,53 +35,67 @@
   <body>
     <div class="card-container">
       <div class="card card1">
-        <img src="./images/card-icon4.png" alt="" srcset="">
+        <img src="./images/card-icon4.png" alt="" srcset="" />
         <h3>Preliminary Design</h3>
         <p class="desc">
-          InnoCAD Team provides a brief overview of the document, explaining its purpose and what readers can expect to find.In our design, considering factors like sunlight exposure, shading analysis, and available space.
+          InnoCAD Team provides a brief overview of the document, explaining its
+          purpose and what readers can expect to find.In our design, considering
+          factors like sunlight exposure, shading analysis, and available space.
         </p>
         <a class="elementor-button" href="">
           <span class="elementor-button-text">Read More</span>
         </a>
       </div>
       <div class="card card2">
-        <img src="./images/card-icon1.png" alt="" srcset="">
+        <img src="./images/card-icon1.png" alt="" srcset="" />
         <h3>Premit planset</h3>
         <p class="desc">
-          eams of InnoCAD India have superior experience and knowledge in designing Residential & Commercial Solar Permit Plan. We work with our customers to provide end-to-end solution for their residential & industrial PV plan requirements starting right from Proposal creation to Permit Set creation, Engineering Review, As-Built creation, & customized drawings.
+          eams of InnoCAD India have superior experience and knowledge in
+          designing Residential & Commercial Solar Permit Plan. We work with our
+          customers to provide end-to-end solution for their residential &
+          industrial PV plan requirements starting right from Proposal creation
+          to Permit Set creation, Engineering Review, As-Built creation, &
+          customized drawings.
         </p>
         <a class="elementor-button" href="">
           <span class="elementor-button-text">Learn More</span>
         </a>
       </div>
       <div class="card card3">
-        <img src="./images/card-icon2.png" alt="" srcset="">
-        <h3>High Standards</h3>
+        <img src="./images/card-icon2.png" alt="" srcset="" />
+        <h3>Interior Design</h3>
         <p class="desc">
-          InnoCAD Team provide Electrical & Structural Professional Engineering (PE) stamps for all 50 states.  Construction plans with PE stamps give customers added assurance that their solar and storage projects have been safely designed and engineered to the codes and standards of your state and jurisdiction.
+          Transforming interiors into captivating spaces that harmonize style, functionality, and comfort is our expertise. Our interior design services cater to diverse preferences and requirements, delivering spaces that resonate with your personality.
         </p>
         <a class="elementor-button" href="">
           <span class="elementor-button-text">Learn More</span>
         </a>
       </div>
       <div class="card card4">
-        <img src="./images/card-icon3.png" alt="" srcset="">
-        <h3>Preliminary Design</h3>
+        <img src="./images/card-icon3.png" alt="" srcset="" />
+        <h3>Architectural Design</h3>
         <p class="desc">
-          InnoCAD Team provides a brief overview of the document, explaining its purpose and what readers can expect to find.In our design, considering factors like sunlight exposure, shading analysis, and available space.
+          From conceptualization to realization, we offer comprehensive architectural design services tailored to your needs. Whether residential, commercial, or industrial, our designs blend innovation and functionality seamlessly.
+        </p>
+        <a class="elementor-button" href="">
+          <span class="elementor-button-text">Learn More</span>
+        </a>
+      </div>
+      <div class="card card5">
+        <img src="./images/card-icon5.png" alt="" srcset="" />
+        <h3>Landscape Design</h3>
+        <p class="desc">
+          We understand the significance of outdoor spaces in enhancing the overall experience. Our landscape design services breathe life into exteriors, creating captivating landscapes that complement architectural excellence.
         </p>
         <a class="elementor-button" href="">
           <span class="elementor-button-text">Learn More</span>
         </a>
       </div>
     </div>
-    
+
     <div class="request-bar">
       <h2 class="request-title">REQUEST A QUOTE</h2>
-      <a
-        class="request-button elementor-button"
-        href=""
-      >
+      <a class="request-button elementor-button" href="">
         <span class="button-text">Start Now</span>
       </a>
     </div>
@@ -87,27 +104,29 @@
       <form action="" class="request-form">
         <div class="name">
           <div class="fname-box">
-            <label for="fname">First Name</label>
+            <label for="fname">First Name<span class="mandatory">*</span></label>
             <input
               type="text"
               id="fname"
               name="firstname"
               placeholder="First name.."
+              required
             />
           </div>
           <div class="lname-box">
-            <label for="lname">Last Name</label>
+            <label for="lname">Last Name<span class="mandatory">*</span></label>
             <input
               type="text"
               id="lname"
               name="lastname"
               placeholder="Last name.."
+              required
             />
           </div>
         </div>
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
+        <label for="country">Country<span class="mandatory">*</span></label>
+        <select id="country" name="country" required>
           <option value="india">INDIA</option>
           <option value="nepal">NEPAL</option>
           <option value="bhutan">BHUTAN</option>
@@ -118,42 +137,46 @@
 
         <div class="name">
           <div class="fname-box">
-            <label for="fname">Email</label>
+            <label for="fname">Email<span class="mandatory">*</span></label>
             <input
               type="text"
               id="fname"
               name="firstname"
               placeholder="Your email.."
+              required
             />
           </div>
           <div class="lname-box">
-            <label for="lname">Phone Number</label>
+            <label for="lname">Phone Number<span class="mandatory">*</span></label>
             <input
               type="text"
               id="lname"
               name="lastname"
               placeholder="Your phone number.."
+              required
             />
           </div>
         </div>
 
         <div class="name">
           <div class="fname-box">
-            <label for="fname">Address</label>
+            <label for="fname">Address<span class="mandatory">*</span></label>
             <input
               type="text"
               id="fname"
               name="firstname"
               placeholder="Your Address.."
+              required
             />
           </div>
           <div class="lname-box">
-            <label for="lname">City</label>
+            <label for="lname">City <span class="mandatory">*</span></label>
             <input
               type="text"
               id="lname"
               name="lastname"
               placeholder="Your city name.."
+              required
             />
           </div>
         </div>
@@ -206,4 +229,5 @@
       </ul>
     </div>
   </div>
+  <script src="home-style.js"></script>
 </html>
