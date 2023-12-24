@@ -6,5 +6,8 @@ $(document).ready(function () {
       $(".rt").hide();
       $(this).hide();
     });
+    $(".brand-logo").click(function () {
+      window.location.href = './home.html';
+    });
   });
   
