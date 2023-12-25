@@ -1,0 +1,61 @@
+.aboutUs {
+  p {
+    font-size: 20px;
+    color: white;
+  }
+
+  .card-tilt {
+    width: 700px;
+    background-color: #4868d6;
+    margin: 30px auto;
+    padding: 20px;
+    transform: skew(-8deg, -2deg);
+  }
+
+  .rect-box {
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    margin: 0 auto;
+    transform: skew(-8deg, -2deg);
+    background-color: #4868d6;
+
+    p.t1 {
+      font-weight: bold;
+      line-height: 50px;
+      text-align: center;
+      color: rgb(0, 255, 4);
+    }
+  }
+  span.highlight {
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+    text-decoration: underline;
+  }
+
+  .layer3 {
+    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    h2.bd-title {
+        color: rgb(0, 255, 4);
+    }
+  }
+
+  .head-container {
+    .rect-box {
+      height: auto;
+      transform: skew(-8deg, -2deg);
+      margin: 10px auto;
+      
+      span {
+        color: rgb(195, 255, 0);
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+  }
+}

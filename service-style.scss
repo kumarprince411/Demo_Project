@@ -222,8 +222,8 @@ a.elementor-button {
 
     &:hover {
       cursor: pointer;
-      background-color: antiquewhite;
-      color: #f2682a;
+      background-color: rgb(215, 240, 250);
+      color: #6c84d3;
       transform: scale(1.1);
       transition: all 0.5s;
     }
@@ -276,7 +276,7 @@ a.elementor-button {
     }
 
     button[type="submit"] {
-      background-color: #f2682a;
+      background-color: #4868d6;
       color: white;
       padding: 10px 20px;
       border: none;
@@ -284,7 +284,7 @@ a.elementor-button {
       cursor: pointer;
 
       &:hover {
-        background-color: #f0946a;
+        background-color: #6c84d3;
       }
     }
   }
