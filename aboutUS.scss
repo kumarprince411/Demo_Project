@@ -5,11 +5,15 @@
   }
 
   .card-tilt {
-    width: 700px;
+    width: 300px;
     background-color: #4868d6;
     margin: 30px auto;
     padding: 20px;
     transform: skew(-8deg, -2deg);
+
+    @media(min-width: 768px) {
+        width: 700px;
+    }
   }
 
   .rect-box {
@@ -36,12 +40,16 @@
 
   .layer3 {
     justify-content: center;
-    width: 700px;
+    width: 300px;
     margin: 0 auto;
     margin-top: 80px;
 
     h2.bd-title {
         color: rgb(0, 255, 4);
+    }
+
+    @media(min-width: 768px) {
+        width: 700px;
     }
   }
 
