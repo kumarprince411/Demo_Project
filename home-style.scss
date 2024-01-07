@@ -164,3 +164,11 @@
     }
   }
 }
+
+.homepage {
+  .card-container { 
+    @media(max-width: 991px) {
+      margin-top: 20px;
+    }
+  }
+}
