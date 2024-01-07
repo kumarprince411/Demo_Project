@@ -9,18 +9,18 @@
     video {
       width: 100%;
 
-      &.squirrel-desk {
-        display: none;
-      }
+      // &.squirrel-desk {
+      //   display: none;
+      // }
 
-      @media (min-width: 992px) {
-        &.squirrel-mob {
-          display: none;
-        }
-        &.squirrel-desk {
-          display: block;
-        }
-      }
+      // @media (min-width: 992px) {
+      //   &.squirrel-mob {
+      //     display: none;
+      //   }
+      //   &.squirrel-desk {
+      //     display: block;
+      //   }
+      // }
     }
 
     .video-content {
